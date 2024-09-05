@@ -18,6 +18,8 @@ function isLogin(){
     if(localStorage.lastLogin && localStorage.lastLogin!=""){
         user = JSON.parse(localStorage.lastLogin);
     }
+  else localStorage.lastLogin = "";
+
 }
 
 function incrementItem(id){
