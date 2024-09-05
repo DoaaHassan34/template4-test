@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="header-content mt-5">
+                <a href="index.html"><img src="images/icon 3.png" alt="logo" class="logo"></a>
+                <a href="index.html" class="brand ms-3 fs-4">Online Games Store</a>
+
+                <nav>
+                 <ul id="links">
+                     <li><a href="login.html">Sign in</a></li>
+                     <li><a href="register.html">Sign up</a></li>
+                 </ul>
+                 <ul id="user_info">
+                   <li><span>Welcome </span><a href="#" id="user">test</a></li>
+                   <li id="cart-item">
+                       <i class="fa-solid fa-cart-shopping"></i>
+                       <span id="count"></span>
+                       <div id="cart-products">
+                        <div>
+                        </div>
+                        <a href="allProducts.html" id="view-all-products" >View All Products</a>
+                       </div>
+
+                       <a href="login.html" id="logout">Logout</a>
+                   </li>
+                   <!-- <li ></li>  -->
+                 </ul>
+             </nav>
+            </div>             
+        </div>
+   </header>
+
+   <section class="section-search">
+
+    <select  onchange="setsearchType(this)" name="search" id="searchCompo">
+        <option value="name">Search By Name</option>
+        <option value="category">Search By Category</option>
+      </select>
+    <input type="search" name="name" id="searchByName" placeholder=" Search by name">
+
+
+   </section>
+   <main>
+    <section class="section-home">
+
+        <div class="container">
+
+            <div class="products row justify-content-center py-5 ">
+                <div class="product-item">
+                    <img src="images/baby-slide blue.jpg" alt="baby-slide">
+
+                    <div class="product-details ">
+                        <h2 class="product-title">Baby Slide</h2>
+                        <p class="product-category">slide </p>
+                        <h5>Price: <span class="product-price">1200 $</span></h5>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button id="add-to-cart">Add To Cart</button>
+                        <i id="fav" class="fa-solid fa-heart"></i>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+   </main>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

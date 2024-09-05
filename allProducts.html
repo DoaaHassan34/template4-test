@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/allProducts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content mt-5">
+                <div>
+                  <a href="index.html"><img src="images/icon 3.png" alt="logo" class="logo"></a>
+                  <a href="index.html" class="brand ms-3 fs-4">Online Games Store</a>
+                </div>
+                <a href="login.html" id="allproducts-logout">Logout</a>
+            </div>             
+        </div>
+   </header>
+
+   <main>
+    <section class="section-allProducts">
+
+        <div class="container">
+
+            <div class="products row justify-content-start py-5 ">
+                <div class="product-item rounded-4 p-5">
+                    <img src="images/baby-slide blue.jpg" alt="baby-slide">
+
+                    <div class="product-container">
+                      <div class="product-details ">
+                        <h5 class="product-title">Name: Baby Slide</h5>
+                        <h5 class="product-category">Category: slide </h5>
+                        <h5>Price: <span id="product-price">Price: 1200 $</span></h5>
+                      </div>
+                    
+                      <div class="product-actions">
+                            <h3 id="productCount">count</h3>
+                            <button id="incrementBtn"><i class="fa-solid fa-plus text-success"></i></button>
+                            <button id="decrementBtn"><i class="fa-solid fa-minus text-danger"></i></button>
+                            <button id="remove">remove</button>
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h3 class="total-price-title text-center ">total Price: <span id="totalPrice">amount</span>$</h3>
+
+
+            </div>
+
+        </div>
+    </section>
+   </main>
+
+
+
+   <section class="fav-slider ">
+
+    <h2 class="fav-title mx-auto">Favorites</h2>
+    <p class="fav-title-line bg-danger mx-auto"></p>
+    <!-- Slider main container -->
+    <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper" >
+      <!-- Slides -->
+
+      <div id="swiper-container" class="swiper-slide">
+        <div class="fav-item">
+            <img src="images/bike black.jpg" alt="image">
+            <h5>product: name</h5>
+            <div class="d-flex border border-2" ><h5>category: category</h5><i id="slider-fav" class="fa-solid fa-heart ms-auto text-danger fs-3"></i>
+            </div>
+        </div>
+      </div> 
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+   </section>
+ 
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/allProducts.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+    slidesPerView: 1,
+    spaceBetween: 10,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+  
+  });
+</script>
+
+</body>
+</html>

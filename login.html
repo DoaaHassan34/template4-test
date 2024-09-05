@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+
+            <div class="header-content mt-5">
+                <a href="index.html"><img src="images/icon 3.png" alt="logo" class="logo"></a>
+                <a href="index.html" class="brand ms-3 fs-4">Online Games Store</a>
+
+                <nav>
+                 <ul id="links">
+                     <li><a href="login.html">sign in</a></li>
+                     <li><a href="register.html">register</a></li>
+                 </ul>
+                 <ul id="user_info" class="d-none">
+                   <li><a href="#" id="user">test</a></li>
+                   <li id="cart-item">
+                       <i class="fa-solid fa-cart-shopping"></i>
+                       <span id="count"></span>
+                       <div style ="background-color: red;" id="cart-products">
+                        <div></div>
+                        <a href="cartProducts.html" id="view-all-products" class="d-none">View All Products</a>
+                       </div>
+                   </li>
+                   <li ><a href="login.html" id="logout">Logout</a></li> 
+                 </ul>
+             </nav>
+            </div>             
+        </div>
+   </header>
+
+   <main>
+    
+    <div class="section-form mt-5 m-auto">
+        <h2 class="head">Sign In</h2>
+        
+        <input type="email" placeholder=" Email" id="email" required>
+        <h3 class="fs-6">Do you have an account? <a href="register.html">register</a></h3>
+        <input type="password" id="password" placeholder=" Password" required>
+        <button class="btn btn-success" type="submit" id="login">Login</button>
+
+        <p class="alert-message pt-2 fs-5"></p>
+        
+    </div>
+
+   </main>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>
