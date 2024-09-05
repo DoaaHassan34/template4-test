@@ -17,6 +17,8 @@ function isLogin(){
     }
     else {
         userInfo.style.display = "none";
+        localStorage.lastLogin = "";
+
     }
     }
     //read user products 
